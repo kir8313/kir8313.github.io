@@ -1,8 +1,0 @@
-{
-    "name": "swiper-demo-10-space-between-slides-przaad",
-    "version": "0.0.0",
-    "private": true,
-    "dependencies": {
-      "swiper": "5.3.0"
-    }
-  }
