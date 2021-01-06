@@ -1,15 +1,15 @@
-const IMG1 = [ '/img/icons/course/hover/1.webp', '/img/icons/course/1.webp', '/img/img/top/hover/1.webp','/img/img/top/1.webp'],
-      IMG2 = [ '/img/icons/course/hover/2.webp', '/img/icons/course/2.webp', '/img/img/top/hover/2.webp','/img/img/top/2.webp'],
-      IMG3 = [ '/img/icons/course/hover/3.webp', '/img/icons/course/3.webp', '/img/img/top/hover/3.webp','/img/img/top/3.webp'],
-      IMG4 = [ '/img/icons/course/hover/4.webp', '/img/icons/course/4.webp', '/img/img/top/hover/4.webp','/img/img/top/4.webp'],
-      IMG5 = [ '/img/icons/course/hover/5.webp', '/img/icons/course/5.webp', '/img/img/top/hover/5.webp','/img/img/top/5.webp'],
-      IMG6 = [ '/img/icons/course/hover/6.webp', '/img/icons/course/6.webp', '/img/img/top/hover/6.webp','/img/img/top/6.webp'],
-      IMG7 = [ '/img/icons/course/hover/7.webp', '/img/icons/course/7.webp', '/img/img/top/hover/7.webp','/img/img/top/7.webp'],
-      IMG8 = [ '/img/icons/course/hover/8.webp', '/img/icons/course/8.webp', '/img/img/top/hover/8.webp','/img/img/top/8.webp'],
-      IMG9 = [ '/img/icons/course/hover/9.webp', '/img/icons/course/9.webp', '/img/img/top/hover/9.webp','/img/img/top/9.webp'],
-      IMG10 = [ '/img/icons/course/hover/10.webp', '/img/icons/course/10.webp', '/img/img/top/hover/10.webp','/img/img/top/10.webp'],
-      IMG11 = [ '/img/icons/course/hover/11.webp', '/img/icons/course/11.webp', '/img/img/top/hover/11.webp','/img/img/top/11.webp'],
-      IMG12 = [ '/img/icons/course/hover/12.webp', '/img/icons/course/12.webp', '/img/img/top/hover/12.webp','/img/img/top/12.webp']
+const IMG1 = [ './img/icons/course/hover/1.webp', './img/icons/course/1.webp', './img/img/top/hover/1.webp','./img/img/top/1.webp'],
+      IMG2 = [ './img/icons/course/hover/2.webp', './img/icons/course/2.webp', './img/img/top/hover/2.webp','./img/img/top/2.webp'],
+      IMG3 = [ './img/icons/course/hover/3.webp', './img/icons/course/3.webp', './img/img/top/hover/3.webp','./img/img/top/3.webp'],
+      IMG4 = [ './img/icons/course/hover/4.webp', './img/icons/course/4.webp', './img/img/top/hover/4.webp','./img/img/top/4.webp'],
+      IMG5 = [ './img/icons/course/hover/5.webp', './img/icons/course/5.webp', './img/img/top/hover/5.webp','./img/img/top/5.webp'],
+      IMG6 = [ './img/icons/course/hover/6.webp', './img/icons/course/6.webp', './img/img/top/hover/6.webp','./img/img/top/6.webp'],
+      IMG7 = [ './img/icons/course/hover/7.webp', './img/icons/course/7.webp', './img/img/top/hover/7.webp','./img/img/top/7.webp'],
+      IMG8 = [ './img/icons/course/hover/8.webp', './img/icons/course/8.webp', './img/img/top/hover/8.webp','./img/img/top/8.webp'],
+      IMG9 = [ './img/icons/course/hover/9.webp', './img/icons/course/9.webp', './img/img/top/hover/9.webp','./img/img/top/9.webp'],
+      IMG10 = [ './img/icons/course/hover/10.webp', './img/icons/course/10.webp', './img/img/top/hover/10.webp','./img/img/top/10.webp'],
+      IMG11 = [ './img/icons/course/hover/11.webp', './img/icons/course/11.webp', './img/img/top/hover/11.webp','./img/img/top/11.webp'],
+      IMG12 = [ './img/icons/course/hover/12.webp', './img/icons/course/12.webp', './img/img/top/hover/12.webp','./img/img/top/12.webp']
 
 function course_Hover(block,image,way) {
     document.querySelector(block).addEventListener('mouseover', () => {
