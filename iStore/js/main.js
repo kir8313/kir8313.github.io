@@ -105,65 +105,65 @@ function imgChange () {
 
  // iphone XR  
     btn1.addEventListener('click', () => {
-        imgXR.src = '/img/1.png'
+        imgXR.src = 'img/1.png'
     })
     btn2.addEventListener('click', () => {
-        imgXR.src = '/img/2.png'
+        imgXR.src = 'img/2.png'
     })
     btn3.addEventListener('click', () => {
-        imgXR.src = '/img/3.png'
+        imgXR.src = 'img/3.png'
     })
 
  // iphone X
     btn4.addEventListener('click', () => {
-        imgX.src = '/img/4.png'
+        imgX.src = 'img/4.png'
     })
     btn5.addEventListener('click', () => {
-        imgX.src = '/img/5.png'
+        imgX.src = 'img/5.png'
     })
 
  // iphone 8 
     btn6.addEventListener('click', () => {
-        img8.src = '/img/8.png'
+        img8.src = 'img/8.png'
     })
     btn7.addEventListener('click', () => {
-        img8.src = '/img/6.png'
+        img8.src = 'img/6.png'
     })
     btn8.addEventListener('click', () => {
-        img8.src = '/img/7.png'
+        img8.src = 'img/7.png'
     })
 
 // iphone Xs
     btn9.addEventListener('click', () => {
-        imgXs.src = '/img/11.png'
+        imgXs.src = 'img/11.png'
     })
     btn10.addEventListener('click', () => {
-        imgXs.src = '/img/9.png'
+        imgXs.src = 'img/9.png'
     })
     btn11.addEventListener('click', () => {
-        imgXs.src = '/img/10.png'
+        imgXs.src = 'img/10.png'
     })
 
 // iphone SE
     btn12.addEventListener('click', () => {
-        imgSE.src = '/img/12.webp'
+        imgSE.src = 'img/12.webp'
     })
     btn13.addEventListener('click', () => {
-        imgSE.src = '/img/14.webp'
+        imgSE.src = 'img/14.webp'
     })
     btn14.addEventListener('click', () => {
-        imgSE.src = '/img/13.webp'
+        imgSE.src = 'img/13.webp'
     })
 
  //  iphone 11
     btn15.addEventListener('click', () => {
-        img11.src = '/img/17.png'
+        img11.src = 'img/17.png'
     })
     btn16.addEventListener('click', () => {
-        img11.src = '/img/15.png'
+        img11.src = 'img/15.png'
     })
     btn17.addEventListener('click', () => {
-        img11.src = '/img/16.png'
+        img11.src = 'img/16.png'
     })
 }
 
