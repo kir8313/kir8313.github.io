@@ -105,13 +105,13 @@ function imgChange () {
 
  // iphone XR  
     btn1.addEventListener('click', () => {
-        imgXR.src = '/img/1.png'
+        imgXR.src = './img/1.png'
     })
     btn2.addEventListener('click', () => {
-        imgXR.src = '/img/2.png'
+        imgXR.src = './img/2.png'
     })
     btn3.addEventListener('click', () => {
-        imgXR.src = '/img/3.png'
+        imgXR.src = './img/3.png'
     })
 
  // iphone X
