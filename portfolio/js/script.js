@@ -1,0 +1,1 @@
+showBurger(); function showBurger(){const burger=document.querySelector('.nav__burger');burger.addEventListener('click',function(){const menu=document.querySelector('.nav__menu');const body=document.querySelector('.body');menu.classList.toggle('active');burger.classList.toggle('active');body.classList.toggle('lock');});};

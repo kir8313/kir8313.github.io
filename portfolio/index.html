@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Персональный сайт учителя Арзамаскиной Ольги Владимировны</title>
+</head>
+<body>
+<nav class="nav">
+  <div class="container">
+      <div class="nav__body">
+            <div class="nav__burger">
+              <span></span>                          
+            </div>
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li>
+                  <a href="./index.html" class="nav__link">Главная</a>                                  
+                </li>
+                <li>
+                  <a href="./about_I.html" class="nav__link">О себе</a>
+                </li>
+                <li>
+                  <a href="#" class="nav__link">Портфолио</a>
+                </li>
+                <li>
+                  <a href="./parents.html" class="nav__link">Родителям</a>
+                </li>
+                <li>
+                  <a href="./pupils.html" class="nav__link">Ученикам</a>
+                </li>
+                <li>
+                  <a href="https://olgaar60.blogspot.com/" target="_blank" class="nav__link">Дистанционка</a>
+                </li>
+                <li>
+                  <a href="#" class="nav__link">Внеуроч. деят</a>
+                </li>
+              </ul> 
+            </div>
+      </div>
+  </div>
+</nav>
+<main>
+  <section class="main">
+    <div class="container">
+      <div class="main__row">        
+        <div class="main__column main__column1">
+          <div class="item-main">
+            <h1 class="item-main__header header"> Арзамаскина Ольга </h1>  
+            <span class="item-main__subtext">Учитель начальных классов</span>      
+            <div class="swiper-container swiper1">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="swiper-slide__photo">
+                    <img src="./img/photo/slider/1.webp" alt="1 photo">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide__photo">
+                    <img src="./img/photo/slider/2.webp" alt="2 photo">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide__photo">
+                    <img src="./img/photo/slider/3.webp" alt="3 photo">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide__photo">
+                    <img src="./img/photo/slider/4.webp" alt="4 photo">
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="main__column main__column2">          
+            <picture class="item-main__photo">
+              <source  srcset="./img/photo/i_am.webp" type="image/webp" media="(min-width:42em)">
+              <source  srcset="./img/photo/photo_and_circle.webp" type="image/webp" media="(max-width:42em)">
+              <img src="./img/photo/i am.png" alt="my photo" >
+            </picture>          
+        </div>
+      </div>      
+      <img class="main__plane" src="./img/icons/plane.webp" alt="plane">     
+    </div>
+  </section>
+
+  <section class="forWhom">
+    <div class="container">
+      <h2 class="forWhom__header header">Для кого?</h2>
+      <div class="forWhom__wrap">
+        <div class="forWhom__textInfo">
+          <p>
+            Сайт содержит полезную информацию
+            для родителей - полезные ссылки на интернет-ресурсы,
+            для учеников - онлайн-тренажеры, электронные книги и справочники, онлайн-музеи,
+            для учителей - учебники, пособия к УМК "Школа России", разработки уроков и внеклассных мероприятий,
+            технологии, методы и приемы обучения.       
+          </p>
+        </div>        
+        <div class="forWhom__circle">
+          <span>Методическая копилка</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="infoPortals">
+    <div class="container">
+      <h2 class="infoPortals__header header">Полезные ресурсы</h2>
+      <div class="infoPortals__wrap">      
+        <a href="https://www.uchportal.ru/load/51" target="_blank" class="infoPortals__link">
+          <img src="./img/photo/portals/teach_portal.webp" alt="uchportal.ru">
+        </a>
+        <a href="https://infourok.ru/" target="_blank" class="infoPortals__link">
+          <img src="./img/photo/portals/infourok.webp" alt="infourok.ru">
+        </a>
+        <a href="#" target="_blank" class="infoPortals__link">
+          <img src="./img/photo/portals/nsPortal.webp" alt="ns portal">
+        </a>      
+        <a href="http://dzschool23.ru/" target="_blank" class="infoPortals__link">
+          <img src="./img/photo/portals/school_23.webp" alt="school 23">
+        </a>      
+        <a href="https://uchi.ru/" target="_blank" class="infoPortals__link">
+          <img src="./img/photo/portals/uchi.webp" alt="uchi.ru">
+        </a>                
+      </div>                
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <span class="footer__text">
+      © Все права защищены
+      <!-- a.footer__social_link*3>img[src="./img/social/$.svg"] -->
+    </span>
+  </div>
+
+
+</div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="../js/script.js"></script>
+<script>
+  new Swiper('.swiper-container', {
+  speed: 800,
+  grabCursor: true,
+  spaceBetween: 40, 
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },   
+});
+</script>
+</body>
+</html>
