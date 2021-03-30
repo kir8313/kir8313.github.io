@@ -56,6 +56,11 @@ a {
   text-decoration: none;
 }
 
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
 .wrap {
   min-height: 100%;
   opacity: 0;
