@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Music festival</title>
+</head>
+<body>
+<script src="./js/lazy.min.js"></script>
+<header class="header">
+  <div class="container">
+    <nav class="header__nav nav">
+      <div class="nav__body">
+        <button class="nav__burger">
+          <span></span>
+        </button>
+        <div class="nav__menu">        
+          <ul class="nav__list">
+            <li class="nav__link"><a href="#tickets">Tickets</a></li>
+            <li class="nav__link"><a href="#info">Trajectory</a></li>
+            <li class="nav__link"><a href="#gallery">Gallery</a></li>
+            <li class="nav__link"><a href="#location">Show</a></li>
+          </ul>
+        </div>  
+          <div class="nav__social social">
+            <a class="social__link" href="#"><img class="social__img" src="./img/svg/1.svg" alt="facebook"></a>
+            <a class="social__link" href="#"><img class="social__img" src="./img/svg/2.svg" alt="twitter"></a>
+            <a class="social__link" href="#"><img class="social__img" src="./img/svg/3.svg" alt="youtube"></a>
+            <a class="social__link" href="#"><img class="social__img" src="./img/svg/4.svg" alt="instagram"></a>
+          </div>                     
+      </div>
+    </nav> 
+  </div>
+   
+</header>
+<main class="main">
+  <section class="first">
+    <div class="container">
+      <div class="first__wrap">
+        <div class="first__text">
+          <h1 class="first__title">Music
+            festival
+          </h1>
+          <span class="first__subtitle">Unforgettable performance of&nbsp;the trajectory group</span>
+          <button class="first__btn btn" data-aos="fade-up" data-aos-delay="500">buy</button>
+        </div>
+      </div>
+      <picture>
+      <source media="(min-width: 768px)" type="image/webp" data-srcset="./img/photo/bg-main-page.webp 1x,
+       ./img/photo/bg-main-page@2x.webp 2x, ./img/photo/bg-main-page@3x.webp 3x">
+      <source media="(max-width: 767px)" type="image/webp" data-srcset="./img/photo/bg-main-page480.webp 1x,
+      ./img/photo/bg-main-page480@2x.webp 2x, ./img/photo/bg-main-page480@3x.webp 3x">
+      <img class="first__bg lazyload blur-up" src="./img/photo/bg-main-page_small.webp"  data-src="./img/photo/bg-main-page.webp" data-srcset="./img/photo/bg-main-page@2x.webP 2x, ./img/photo/bg-main-page@3x.webP 3x" alt="background photo music group">
+      </picture>
+    </div>
+  </section>
+  <section id="tickets" class="tickets">
+    <div class="container tickets__container">
+      <h2 class="tickets__title title">Tickets</h2>
+      <div class="tickets__wrap">
+        <div class="tickets__block">
+          <div class="block__content content">
+            <h3 class="content__title">VIP</h3>
+            <span class="content__price">100</span>
+            <button class="content__btn btn-border btn" data-aos="zoom-in"><span>buy</span></button>
+            <span class="content__pact">Lorem ipsum dolor sit amet</span>
+            <p class="content__footnote">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit pharetra the street of the sad, trucks netus tortor justo.
+            </p>
+          </div>
+          <img class="block__bg lazyload blur-up" src="./img/photo/1_small.webp" data-src="./img/photo/1.webp" data-srset="./img/photo/1@2x.webp 2x, ./img/photo/1@3x.webp 3x" alt="background block-1 music artict">
+        </div>
+        <div class="tickets__block">
+          <div class="block__content content">
+            <h3 class="content__title">Regular</h3>
+            <span class="content__price">50</span>
+            <button class="content__btn btn-border btn" data-aos="zoom-in"><span>buy</span></button>
+            <span class="content__pact">Lorem ipsum dolor sit amet</span>
+            <p class="content__footnote">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit pharetra the street of the sad, trucks netus tortor justo.
+            </p>
+          </div>          
+          <img class="block__bg lazyload blur-up" src="./img/photo/2_small.webp" data-src="./img/photo/2.webp" data-srset="./img/photo/2@2x.webp 2x, ./img/photo/2@3x.webp 3x" alt="background block-2 music artict">
+        </div>
+      </div>
+      <p class="tickets__footer">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, tempus primis tortor taciti viverra
+        magna habitasse conubia, aenean laoreet tellus aliquam sollicitudin mollis. Neque mattis
+        mauris himenaeos vestibulum.
+      </p>
+    </div>
+  </section>
+  <section id="info" class="info lazyload blur-up" data-bgset="./img/photo/bg-date-section480.webp,
+   ./img/photo/bg-date-section480@2x.webp 2x, ./img/photo/bg-date-section@3x.webp 3x [(max-width: 767px)] |
+  ./img/photo/bg-date-section.webp, ./img/photo/bg-date-section@2x.webp 2x, ./img/photo/bg-date-section@3x.webp 3x [(min-width: 768px)]">
+    <div class="container">
+      
+      <div class="info__wrap">
+        <h2 class="info__title title">trajectory</h2>
+        <span class="info__subtitle">
+          Lorem ipsum carrots Minneapolis, Colorado real estate developer boat set marriage was fear.
+        </span>
+        <div class="info__content" data-aos="fade-left" data-aos-anchor-placement="top-center">
+          <div class="info__dates dates">
+            <span class="dates__string dates__string-1" data-da=".info__events,767,0">2009</span>
+            <span class="dates__string dates__string-2" data-da=".info__events,767,1">2010</span>
+            <span class="dates__string dates__string-3" data-da=".info__events,767,2">2014</span>
+            <span class="dates__string dates__string-4" data-da=".info__events,767,3">2015</span>
+          </div>
+          <svg class="info__timeline" viewBox="0 0 24 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="info__timeline_point info__timeline_point-4" cx="12" cy="393" r="9.5" stroke="#F97E6B" stroke-width="5"/>
+            <line class="info__timeline_line info__timeline_line-3" x1="12" y1="296" x2="12" y2="373" stroke="#F97E6B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="info__timeline_point info__timeline_point-3" cx="12" cy="277" r="9.5" stroke="#F97E6B" stroke-width="5"/>
+            <line class="info__timeline_line info__timeline_line-2" x1="12" y1="151" x2="12" y2="258" stroke="#F97E6B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="info__timeline_point info__timeline_point-2" cx="12" cy="131" r="9.5" stroke="#F97E6B" stroke-width="5"/>
+            <line class="info__timeline_line info__timeline_line-1" x1="12" y1="31" x2="12" y2="112" stroke="#F97E6B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="info__timeline_point info__timeline_point-1" cx="12" cy="12" r="9.5" stroke="#F97E6B" stroke-width="5"/>
+          </svg>
+          <div class="info__events events">
+            <p class="events__text events__text-1">Lorem ipsum carrots Minneapolis, Colorado real estate developer boat set marriage was.</p>
+            <p class="events__text events__text-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, rhoncus suscipit, who was from a macro,
+              shall be born, facilisis blandit Vivamus imperdiet.
+            </p>       
+            <p class="events__text events__text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, rhoncus suscipit, who was from a macro.</p>
+            <p class="events__text events__text-4">Lorem ipsum dolor sit amet consectetur adipiscing elit, rhoncus quis a tortor suscipit erat.</p>
+          </div>
+        </div>        
+      </div>   
+    </div>
+  </section>
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="gallery__title title">Gallery</h2>
+      <div class="gallery__wrap">
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/1.webp" data-srcset="./img/photo/gallery/1@2x.webp 2x, ./img/photo/gallery/1@3x.webp 3x" alt="1"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/2.webp" data-srcset="./img/photo/gallery/2@2x.webp 2x, ./img/photo/gallery/2@3x.webp 3x" alt="2"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/3.webp" data-srcset="./img/photo/gallery/3@2x.webp 2x, ./img/photo/gallery/3@3x.webp 3x" alt="3"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/4.webp" data-srcset="./img/photo/gallery/4@2x.webp 2x, ./img/photo/gallery/4@3x.webp 3x" alt="4"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/5.webp" data-srcset="./img/photo/gallery/5@2x.webp 2x, ./img/photo/gallery/5@3x.webp 3x" alt="5"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/6.webp" data-srcset="./img/photo/gallery/6@2x.webp 2x, ./img/photo/gallery/6@3x.webp 3x" alt="6"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/7.webp" data-srcset="./img/photo/gallery/7@2x.webp 2x, ./img/photo/gallery/7@3x.webp 3x" alt="7"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/8.webp" data-srcset="./img/photo/gallery/8@2x.webp 2x, ./img/photo/gallery/8@3x.webp 3x" alt="8"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/9.webp" data-srcset="./img/photo/gallery/9@2x.webp 2x, ./img/photo/gallery/9@3x.webp 3x" alt="9"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/7.webp" data-srcset="./img/photo/gallery/7@2x.webp 2x, ./img/photo/gallery/7@3x.webp 3x" alt="10"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/8.webp" data-srcset="./img/photo/gallery/8@2x.webp 2x, ./img/photo/gallery/8@3x.webp 3x" alt="11"></div>
+        <div class="gallery__img"><img class="lazyload" data-sizes="auto" data-src="./img/photo/gallery/9.webp" data-srcset="./img/photo/gallery/9@2x.webp 2x, ./img/photo/gallery/9@3x.webp 3x" alt="12"></div>
+      </div>
+      <button class="gallery__btn btn-border btn --btn-more"><span>Show more</span></button>
+    </div>
+  </section>
+  <section class="location lazyload blur-up" data-bgset="./img/photo/map480.webp, ./img/photo/map480@2x.webp 2x,
+  ./img/photo/map480@3x.webp 3x [(max-width: 767px)] |
+  ./img/photo/map.webp, ./img/photo/map@2x.webp 2x, ./img/photo/map@3x.webp 3x [(min-width: 768px)]">
+    <div class="container">
+      <div class="location__content">
+        <h2 class="location__title title">o show</h2>
+        <span class="location__subtitle">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Neque porro deserunt corporis fugit nulla autem in blanditiis et excepturi hic!
+        </span>
+        <p class="location__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis!
+        </p>
+      </div>
+    </div>
+  </section> 
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__text">
+        <h2 class="footer__title">Music
+          festival</h2>
+        <span class="footer__subtitle">Lorem ipsum dolor sit, amet consectetur.</span>
+      </div>
+      <div class="footer__social social">
+        <a class="social__link" href="#"><img class="social__img" src="./img/svg/1.svg" alt="facebook"></a>
+        <a class="social__link" href="#"><img class="social__img" src="./img/svg/2.svg" alt="twitter"></a>
+        <a class="social__link" href="#"><img class="social__img" src="./img/svg/3.svg" alt="youtube"></a>
+        <a class="social__link" href="#"><img class="social__img" src="./img/svg/4.svg" alt="instagram"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="./js/modules.js"></script>
+<script src="./js/main.min.js"></script>
+
+</body>
+</html>
