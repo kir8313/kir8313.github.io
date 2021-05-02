@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Магазин shopkir</title>
+</head>
+<body>
+<script src="./js/lazy.min.js"></script>
+
+
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <nav class="header__nav nav">      
+      	<div class="container">
+      		<div class="nav__body">
+      			<a class="nav__logo logo" href="#">Shopkir</a>
+      			<div class="nav__burger">
+      				<span></span>                          
+      			</div>
+      			<div class="nav__menu">
+      				<ul class="nav__list">
+      					<li>
+      						<a href="#" class="nav__link">Главная</a>                                  
+      					</li>
+      					<li>
+      						<a href="#" class="nav__link">Каталог</a>
+      					</li>
+      					<li>
+      						<a href="#" class="nav__link">О нас</a>
+      					</li>
+      					<li>
+      						<a href="#" class="nav__link">Доставка и оплата</a>
+      					</li>
+      					<li>
+      						<a href="#" class="nav__link">Контакты</a>
+      					</li>										
+      				</ul> 
+      			</div>
+      			<div class="nav__basket ">
+      				<a href="#">Корзина</a>
+      				<a href="#">
+      					<img src="./img/svg/basket.svg" alt="basket">
+      				</a>
+      				<span>12</span>
+      			</div>
+      		</div>
+      	</div>      
+      </nav>
+    </div>
+      <div class="container">
+        <div class="header__wrap">
+          <h1 class="header__title">Футболки известных брендов с&nbsp;доставкой по&nbsp;России</h1>
+          <span class="header__subtitle">
+            Футболки по&nbsp;самым низким ценам от&nbsp;брендов
+            Calvin Klein, Giorgio Armani, Puma, Reebok, Adidas и&nbsp;другие
+          </span>
+          <button class="header__btn">Перейти к покупкам</button>
+          <span class="header__bg-text">Shopkir</span>
+        </div>
+      </div>    
+  </div>
+</header>
+<main>
+  <section class="catalog">
+    <div class="container">
+      <h2 class="catalog__title title">Каталог</h2>
+      <div class="catalog__wrap">
+        <div class="catalog__filter filter">
+          <ul class="filter__list">
+            <li class="filter__price price-filter">
+              <span class="price-filter__title filter__title">Цена, руб</span>
+              <div class="price-filter__inner">
+                <input id="input-0" class="price-filter__input" type="number">
+                <input id="input-1" class="price-filter__input" type="number">
+              </div>
+              <div id="range-slider" class="price-filter__range" >
+            </li>
+            <li class="filter__gender gender">
+              <span class="gender__title filter__title">Пол</span>
+              <div class="gender__inner">
+                <label class="gender__label checkbox-custom">
+                <input class="gender__checkbox checkbox-custom__input" type="checkbox">
+                <span></span>    
+                мужской            
+              </label>
+              <label class="gender__label checkbox-custom">
+                <input class="gender__checkbox checkbox-custom__input" type="checkbox">
+                <span></span>
+                женский                
+              </label>
+              </div>
+            </li>
+            <li class="filter__discounts">  
+              <span class="filter__title">Скидки</span>   
+              <ul>
+                <li>
+                  <label class="radio-custom">
+                    <input type="radio" name="q1">
+                    <span></span> 
+                    от 10% и выше
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-custom">
+                    <input type="radio" name="q1">
+                    <span></span> 
+                    от 30% и выше
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-custom">
+                    <input type="radio" name="q1">
+                    <span></span> 
+                    от 50% и выше
+                  </label>
+                </li>
+                <li>
+                  <label class="radio-custom">
+                    <input type="radio" name="q1">
+                    <span></span> 
+                    от 70% и выше
+                  </label>
+                </li>
+              </ul>       
+            </li>
+            <li class="filter__size size-filter">
+              <span class="filter__title size-filter__title">Размер</span>
+              <ul class="size-filter__list">
+                <li class="size-filter__item">XS</li>
+                <li class="size-filter__item">S</li>
+                <li class="size-filter__item">M</li>
+                <li class="size-filter__item">L</li>
+                <li class="size-filter__item">XL</li>
+                <li class="size-filter__item">XXL</li>
+              </ul>     
+            </li>
+          </ul>
+          <button class="filter__btn filter__btn-on">Применить</button>
+          <button class="filter__btn filter__btn-off">сбросить</button>
+        </div>
+        <ul class="catalog__list list-catalog">
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/1.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка Calvin Klein</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">600 ₽</span>
+                    <span class="price-before">1000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>                  
+                </div>                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/2.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка Giorgio Armani</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">1000 ₽</span>
+                    <span class="price-before">1500 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/3.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка поло Puma</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">500 ₽</span>
+                    <span class="price-before">700 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/4.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка Reebok серая</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">800 ₽</span>
+                    <span class="price-before">1000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/5.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка STEFANO RICCI</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">1200 ₽</span>
+                    <span class="price-before">2000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/6.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка EMPORIO ARMANI</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">2500 ₽</span>
+                    <span class="price-before">4000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/7.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка ZILLI</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">1000 ₽</span>
+                    <span class="price-before">2200 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/8.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка CORNELIANI</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">1500 ₽</span>
+                    <span class="price-before">3300 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/9.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Майка ZILLI</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">10 000 ₽</span>
+                    <span class="price-before">14 500 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/1.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка EMPORIO ARMANI</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">3700 ₽</span>
+                    <span class="price-before">10 000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/2.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка VERSACE</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">30 000 ₽</span>
+                    <span class="price-before">50 000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li class="list-catalog__item">
+            <article class="list-catalog__card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/3.jpg" alt="футболка ">
+              </a>
+              <div class="card__inner">
+                <a class="card__name" href="#">Футболка Puma</a>
+                <div class="card__underline">
+                  <div class="card__price">
+                    <span class="price-now">600 ₽</span>
+                    <span class="price-before">1000 ₽</span>
+                  </div>
+                  <button class="card__basket">
+                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                  </button>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- <footer class="footer">
+  <div class="container">   
+		<a class="nav__logo logo" href="#">Shopkir</a>
+		<ul class="footer__list">
+			<li>
+				<a href="#" class="footer__link">Главная</a>                                  
+			</li>
+			<li>
+				<a href="#" class="footer__link">Каталог</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link">О нас</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link">Доставка и оплата</a>
+			</li>
+			<li>
+				<a href="#" class="footer__link">Контакты</a>
+			</li>										
+		</ul>  
+		         
+  </div>
+</footer> -->
+<script src="./js/modules.js"></script>
+<script src="./js/main.min.js"></script>
+
+</body>
+</html>
