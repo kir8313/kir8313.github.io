@@ -39,10 +39,12 @@
       					</li>										
       				</ul> 
       			</div>
-      			<div class="nav__basket ">
+      			<div class="nav__basket basket">
       				<a href="#">Корзина</a>
       				<a href="#">
-      					<img src="./img/svg/basket.svg" alt="basket">
+      					<svg style="width: 20px; height: 20px;">
+      						<use href="img/svg/sprite.svg#basket"></use>
+      					</svg>
       				</a>
       				<span>12</span>
       			</div>
@@ -98,28 +100,28 @@
               <ul>
                 <li>
                   <label class="radio-custom">
-                    <input type="radio" name="q1">
+                    <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 10% и выше
                   </label>
                 </li>
                 <li>
                   <label class="radio-custom">
-                    <input type="radio" name="q1">
+                    <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 30% и выше
                   </label>
                 </li>
                 <li>
                   <label class="radio-custom">
-                    <input type="radio" name="q1">
+                    <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 50% и выше
                   </label>
                 </li>
                 <li>
                   <label class="radio-custom">
-                    <input type="radio" name="q1">
+                    <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 70% и выше
                   </label>
@@ -129,19 +131,19 @@
             <li class="filter__size size-filter">
               <span class="filter__title size-filter__title">Размер</span>
               <ul class="size-filter__list">
-                <li class="size-filter__item">XS</li>
-                <li class="size-filter__item">S</li>
-                <li class="size-filter__item">M</li>
-                <li class="size-filter__item">L</li>
-                <li class="size-filter__item">XL</li>
-                <li class="size-filter__item">XXL</li>
+                <li class="size-filter__item"><button>XS</button></li>
+                <li class="size-filter__item"><button>S</button></li>
+                <li class="size-filter__item"><button>M</button></li>
+                <li class="size-filter__item"><button>L</button></li>
+                <li class="size-filter__item"><button>XL</button></li>
+                <li class="size-filter__item"><button>XXL</button></li>
               </ul>     
             </li>
           </ul>
           <button class="filter__btn filter__btn-on">Применить</button>
           <button class="filter__btn filter__btn-off">сбросить</button>
         </div>
-        <div class="catalog__products products">               
+        <div class="catalog__products products --hide-content">               
             <article class="products__card card">
               <a class="card__img" href="#">
                 <img src="./img/products/1.jpg" alt="футболка ">
@@ -154,7 +156,9 @@
                     <span class="price-before">1000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>                  
                   </button>                  
                 </div>                
               </div>
@@ -171,7 +175,9 @@
                     <span class="price-before">1500 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg> 
                   </button>
                 </div>                  
               </div>
@@ -188,7 +194,9 @@
                     <span class="price-before">700 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -205,7 +213,9 @@
                     <span class="price-before">1000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -222,7 +232,9 @@
                     <span class="price-before">2000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -239,7 +251,9 @@
                     <span class="price-before">4000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -256,7 +270,9 @@
                     <span class="price-before">2200 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -273,7 +289,9 @@
                     <span class="price-before">3300 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -290,7 +308,9 @@
                     <span class="price-before">14 500 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -307,7 +327,9 @@
                     <span class="price-before">10 000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -324,7 +346,9 @@
                     <span class="price-before">50 000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -341,7 +365,9 @@
                     <span class="price-before">1000 ₽</span>
                   </div>
                   <button class="card__basket">
-                    <img src="./img/svg/basket-orange.svg" alt="Корзина">
+                    <svg class="basket__img">
+                      <use href="img/svg/sprite.svg#basket-orange"></use>
+                    </svg>
                   </button>
                 </div>                  
               </div>
@@ -371,45 +397,6 @@
     </div>
   </section>
 
-  <!-- <section class="quiz">
-    <div class="container">
-      <h2 class="quiz__title">Мы выберем идеальную футболку для вас</h2>
-      <span class="quiz__subtitle">
-        Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями 
-      </span>
-      <form action="" class="quiz-form"></form>
-    </div>
-  </section> -->
-
-  <section class="team">
-    <div class="container">
-      <h2 class="team__title title">О нас</h2>
-      <ul class="team__list">
-        <li class="team__item people">          
-          <div class="people__img">
-              <img src="./img/team/1.jpg" alt="человек">
-          </div>
-          <span class="people__name">Арзамаскин Кирилл</span>
-            <span class="people__position">Менеджер</span>
-        </li>
-        <li class="team__item people">
-          <div class="people__img">
-              <img src="./img/team/2.jpg" alt="человек">
-          </div>
-          <span class="people__name">Арзамаскин Кирилл</span>
-          <span class="people__position">Копирайтер</span>          
-        </li>
-        <li class="team__item people">
-          <div class="people__img">
-              <img src="./img/team/3.jpg" alt="человек">
-          </div>
-          <span class="people__name">Арзамаскин Кирилл</span>
-          <span class="people__position">Верстальщик</span>          
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <section class="faq">
     <div class="container">
       <h2 class="faq__title title">Часто задаваемые вопросы</h2>
@@ -433,41 +420,122 @@
     </ul>
     </div>
   </section>
-  <!-- <section id="сontacts" class="сontacts">
+
+  <section class="team">
+  <div class="container">
+    <h2 class="team__title title">О нас</h2>
+    <ul class="team__list">
+      <li class="team__item people">          
+        <div class="people__img">
+            <img src="./img/team/1.jpg" alt="человек">
+        </div>
+        <span class="people__name">Арзамаскин Кирилл</span>
+          <span class="people__position">Менеджер</span>
+      </li>
+      <li class="team__item people">
+        <div class="people__img">
+            <img src="./img/team/2.jpg" alt="человек">
+        </div>
+        <span class="people__name">Арзамаскин Кирилл</span>
+        <span class="people__position">Копирайтер</span>          
+      </li>
+      <li class="team__item people">
+        <div class="people__img">
+            <img src="./img/team/3.jpg" alt="человек">
+        </div>
+        <span class="people__name">Арзамаскин Кирилл</span>
+        <span class="people__position">Верстальщик</span>          
+      </li>
+    </ul>
+  </div>
+  </section>
+
+
+  <section id="сontacts" class="contacts">
     <div class="container">
       <div class="contacts__wrap">
-        <div class="сontacts__info info">
-          <h2 class="info__title">Контакты</h2>
-
+        <div class="contacts__info info">
+          <h2 class="info__title title">Контакты</h2>
+          <div class="info__item">
+            <h3 class="info__subtitle">
+              Офис продаж
+              <span class="info__tultip tultip">
+                <button class ="tultip__btn" aria-labelledby="info-office" aria-label="Дополнительная информация по звонкам">
+                  <svg>
+                    <use href="img/svg/sprite.svg#question"></use>
+                  </svg>
+                </button>
+                <span id="info-office" role="tooltip" class="tultip__text">
+                  Вопросы о качестве, обслуживании, доставке
+                  и товаре просьба задавать в отдел продаж
+                </span>
+              </span>
+            </h3>
+            <a class="info__phone title" href="tel:+78005434343">+7 800 543 43 43</a>
+            <span class="info__address">г. Москва, ул. Моховая, 14 корпус 2</span>
+          </div>
+          <div class="info__item">
+            <h3 class="info__subtitle">Главный офис</h3>
+            <a class="info__phone title" href="tel:+78005434343">+7 800 543 43 43</a>
+            <span class="info__address">г. Москва, ул. Моховая, 14 корпус 2</span>
+          </div>
+          <div class="info__social info-social">
+            <a href="#" class="info-social__link">
+              <svg class="vk" width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="info-social__path" d="M23.1508 29.8588C23.1508 29.8588 23.5743 29.8129 23.7912 29.5853C23.9898 29.3769 23.9829 28.9835 23.9829 28.9835C23.9829 28.9835 23.9565 27.1465 24.8299 26.8752C25.6908 26.6085 26.796 28.6517 27.9691 29.4374C28.8551 30.0314 29.5277 29.9014 29.5277 29.9014L32.6622 29.8588C32.6622 29.8588 34.3012 29.7602 33.5242 28.5015C33.4599 28.3984 33.0708 27.5701 31.1942 25.8687C29.2281 24.0878 29.4921 24.3758 31.8588 21.2947C33.3004 19.4185 33.8766 18.273 33.6964 17.7832C33.5253 17.3148 32.4648 17.4392 32.4648 17.4392L28.9366 17.4605C28.9366 17.4605 28.6749 17.4257 28.481 17.5389C28.2916 17.6499 28.1688 17.9088 28.1688 17.9088C28.1688 17.9088 27.611 19.3602 26.8661 20.5953C25.2948 23.2001 24.667 23.338 24.4099 23.1766C23.8119 22.7989 23.9611 21.6612 23.9611 20.8531C23.9611 18.328 24.3536 17.2755 23.1978 17.0032C22.8145 16.9124 22.5321 16.853 21.5508 16.8429C20.2917 16.8306 19.2266 16.8474 18.6229 17.1354C18.2212 17.3271 17.9113 17.7552 18.1007 17.7799C18.3336 17.8101 18.8616 17.9189 19.1417 18.291C19.5032 18.7718 19.4906 19.85 19.4906 19.85C19.4906 19.85 19.6983 22.8224 19.0051 23.1911C18.5299 23.4444 17.878 22.9277 16.4766 20.564C15.7592 19.3535 15.2175 18.0153 15.2175 18.0153C15.2175 18.0153 15.113 17.7653 14.926 17.6308C14.6999 17.4683 14.3842 17.4179 14.3842 17.4179L11.0316 17.4392C11.0316 17.4392 10.5278 17.4526 10.343 17.6667C10.1788 17.8561 10.3303 18.2495 10.3303 18.2495C10.3303 18.2495 12.9553 24.2469 15.9279 27.2697C18.6539 30.0404 21.7482 29.8588 21.7482 29.8588H23.1508Z"/>
+                
+              </svg>  
+            </a>
+            <a href="#" class="info-social__link">
+              <svg class="insta" width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="info-social__path" fill-rule="evenodd" clip-rule="evenodd" d="M22.001 11.0034C18.8144 11.0034 18.4145 11.0173 17.1629 11.0739C15.9138 11.1308 15.0612 11.3276 14.3151 11.6162C13.5434 11.9144 12.8888 12.3132 12.2366 12.9623C11.5839 13.6111 11.183 14.2623 10.8824 15.0298C10.5915 15.7722 10.3935 16.6207 10.3372 17.8629C10.2813 19.108 10.2666 19.5061 10.2666 22.6762C10.2666 25.8463 10.2808 26.2429 10.3375 27.488C10.3949 28.7307 10.5927 29.5789 10.8826 30.3211C11.1825 31.0888 11.5834 31.7401 12.2359 32.3889C12.8878 33.0382 13.5424 33.438 14.3137 33.7361C15.0602 34.0248 15.9131 34.2215 17.162 34.2784C18.4135 34.3351 18.8132 34.3489 21.9996 34.3489C25.1864 34.3489 25.5851 34.3351 26.8367 34.2784C28.0858 34.2215 28.9394 34.0248 29.686 33.7361C30.4574 33.438 31.1111 33.0382 31.763 32.3889C32.4157 31.7401 32.8166 31.0888 33.1173 30.3214C33.4057 29.5789 33.6037 28.7305 33.6624 27.4883C33.7186 26.2432 33.7333 25.8463 33.7333 22.6762C33.7333 19.5061 33.7186 19.1082 33.6624 17.8631C33.6037 16.6204 33.4057 15.7722 33.1173 15.03C32.8166 14.2623 32.4157 13.6111 31.763 12.9623C31.1104 12.313 30.4577 11.9141 29.6852 11.6162C28.9372 11.3276 28.0841 11.1308 26.835 11.0739C25.5834 11.0173 25.185 11.0034 21.9974 11.0034H22.001ZM20.9486 13.1072C21.261 13.1067 21.6096 13.1072 22.0012 13.1072C25.134 13.1072 25.5053 13.1184 26.7425 13.1744C27.8865 13.2264 28.5074 13.4166 28.921 13.5763C29.4686 13.7879 29.8589 14.0408 30.2694 14.4494C30.68 14.8579 30.9343 15.247 31.1474 15.7917C31.308 16.2027 31.4994 16.8204 31.5515 17.9585C31.6077 19.189 31.6199 19.5586 31.6199 22.6738C31.6199 25.789 31.6077 26.1586 31.5515 27.3891C31.4992 28.5272 31.308 29.1449 31.1474 29.5559C30.9347 30.1006 30.68 30.4885 30.2694 30.8968C29.8587 31.3053 29.4688 31.5582 28.921 31.7698C28.5079 31.9303 27.8865 32.12 26.7425 32.172C25.5056 32.228 25.134 32.2401 22.0012 32.2401C18.8681 32.2401 18.4968 32.228 17.2599 32.172C16.1159 32.1195 15.495 31.9293 15.0811 31.7696C14.5336 31.558 14.1425 31.3051 13.7318 30.8965C13.3211 30.488 13.0669 30.0999 12.8537 29.5549C12.6931 29.1439 12.5017 28.5262 12.4497 27.3881C12.3934 26.1576 12.3822 25.788 12.3822 22.6709C12.3822 19.5538 12.3934 19.1861 12.4497 17.9556C12.502 16.8175 12.6931 16.1998 12.8537 15.7883C13.0664 15.2436 13.3211 14.8545 13.7318 14.446C14.1425 14.0374 14.5336 13.7845 15.0811 13.5724C15.4947 13.4119 16.1159 13.2223 17.2599 13.17C18.3423 13.1213 18.7618 13.1067 20.9486 13.1043V13.1072ZM28.2643 15.0452C27.487 15.0452 26.8563 15.6718 26.8563 16.4454C26.8563 17.2187 27.487 17.8461 28.2643 17.8461C29.0417 17.8461 29.6724 17.2187 29.6724 16.4454C29.6724 15.6721 29.0417 15.0447 28.2643 15.0447V15.0452ZM22.0011 16.682C18.6734 16.682 15.9755 19.366 15.9755 22.6764C15.9755 25.9869 18.6734 28.6697 22.0011 28.6697C25.3287 28.6697 28.0257 25.9869 28.0257 22.6764C28.0257 19.366 25.3285 16.682 22.0008 16.682H22.0011ZM22.0012 18.7855C24.1612 18.7855 25.9124 20.5274 25.9124 22.6764C25.9124 24.8252 24.1612 26.5674 22.0012 26.5674C19.8411 26.5674 18.0901 24.8252 18.0901 22.6764C18.0901 20.5274 19.8411 18.7855 22.0012 18.7855Z"/>
+              </svg>
+            </a>
+            <a href="#" class="info-social__link">
+              <svg class="telegram" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1038 23.1967L11.4539 20.7246C10.8172 20.4462 10.8603 19.5287 11.5205 19.3115L33.0048 12.229C33.5668 12.0439 34.1146 12.5457 33.9792 13.1221L29.6859 31.3762C29.5577 31.9215 28.9024 32.1439 28.469 31.789L23.4243 27.6613L17.1038 23.1967Z" fill="#FCF8E8"/>
+                <path d="M28.8097 16.1708L17.1035 23.1967L18.5359 29.8406C18.6643 30.4366 19.3669 30.6993 19.8549 30.3338L23.424 27.6611L20.4874 25.2578L29.1796 16.6466C29.4344 16.3941 29.1173 15.9861 28.8097 16.1708Z" fill="#BEC3D2"/>
+                <path d="M19.0083 30.4264C19.2715 30.5454 19.5939 30.5298 19.8551 30.3343L23.4242 27.6615L21.9559 26.4599L20.4875 25.2583L19.0083 30.4264Z" fill="#AFB4C8"/>
+              </svg>
+            </a>
+            
+            
+            
+                             
+          </div>
         </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17742.523186596947!2d43.4051244!3d56.2294257!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1620151334454!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>  
       </div>
     </div>
-  </section> -->
+  </section>
 </main>
 
-<!-- <footer class="footer">
-  <div class="container">   
-		<a class="nav__logo logo" href="#">Shopkir</a>
-		<ul class="footer__list">
-			<li>
-				<a href="#" class="footer__link">Главная</a>                                  
-			</li>
-			<li>
-				<a href="#" class="footer__link">Каталог</a>
-			</li>
-			<li>
-				<a href="#" class="footer__link">О нас</a>
-			</li>
-			<li>
-				<a href="#" class="footer__link">Доставка и оплата</a>
-			</li>
-			<li>
-				<a href="#" class="footer__link">Контакты</a>
-			</li>										
-		</ul>  
-		         
+<footer class="footer">
+  <div class="container">  
+		<div class="footer__wrap">
+			<a class="footer__logo logo" href="#">Shopkir</a>
+			<ul class="footer__list">
+				<li>
+					<a href="#" class="footer__link">Главная</a>                                  
+				</li>
+				<li>
+					<a href="#" class="footer__link">Каталог</a>
+				</li>
+				<li>
+					<a href="#" class="footer__link">О нас</a>
+				</li>
+				<li>
+					<a href="#" class="footer__link">Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="#" class="footer__link">Контакты</a>
+				</li>										
+			</ul>  
+		</div> 		         
   </div>
-</footer> -->
+</footer>
 <script src="./js/modules.js"></script>
 <script src="./js/main.min.js"></script>
 
