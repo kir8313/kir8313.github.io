@@ -16,33 +16,33 @@
       <nav class="header__nav nav">      
       	<div class="container">
       		<div class="nav__body">
-      			<a class="nav__logo logo" href="#">Shopkir</a>
+      			<a class="nav__logo logo" href="index.html">Shopkir</a>
       			<div class="nav__burger">
       				<span></span>                          
       			</div>
       			<div class="nav__menu">
       				<ul class="nav__list">
-      					<li>
-      						<a href="#" class="nav__link">Главная</a>                                  
+      					<li class="nav__list-item">
+      						<a href="index.html" class="nav__list-link --nav__link">Главная</a>                                  
       					</li>
-      					<li>
-      						<a href="#" class="nav__link">Каталог</a>
+      					<li class="nav__list-item">
+      						<a href="#catalog" class="nav__list-link --nav__link">Каталог</a>
       					</li>
-      					<li>
-      						<a href="#" class="nav__link">О нас</a>
+      					<li class="nav__list-item">
+      						<a href="#team" class="nav__list-link --nav__link">О нас</a>
       					</li>
-      					<li>
-      						<a href="#" class="nav__link">Доставка и оплата</a>
+      					<li class="nav__list-item">
+      						<a href="#delivery" class="nav__list-link --nav__link">Доставка и оплата</a>
       					</li>
-      					<li>
-      						<a href="#" class="nav__link">Контакты</a>
+      					<li class="nav__list-item">
+      						<a href="#contacts" class="nav__list-link --nav__link">Контакты</a>
       					</li>										
       				</ul> 
       			</div>
       			<div class="nav__basket basket">
-      				<a href="#">Корзина</a>
-      				<a href="#">
-      					<svg style="width: 20px; height: 20px;">
+      				<a class="basket__link" href="#">Корзина</a>
+      				<a class="basket__link" href="#">
+      					<svg class="basket__img">
       						<use href="img/svg/sprite.svg#basket"></use>
       					</svg>
       				</a>
@@ -60,66 +60,64 @@
             Calvin Klein, Giorgio Armani, Puma, Reebok, Adidas и&nbsp;другие
           </span>
           <button class="header__btn">Перейти к покупкам</button>
-          <span class="header__bg-text">Shopkir</span>
         </div>
       </div>    
   </div>
 </header>
 <main>
-  <section class="catalog">
+  <section class="catalog" id="catalog">
     <div class="container">
       <h2 class="catalog__title title">Каталог</h2>
       <div class="catalog__wrap">
         <div class="catalog__filter filter">
           <ul class="filter__list">
-            <li class="filter__price price-filter">
-              <span class="price-filter__title filter__title">Цена, руб</span>
-              <div class="price-filter__inner">
-                <input id="input-0" class="price-filter__input" type="number">
-                <input id="input-1" class="price-filter__input" type="number">
+            <li class="filter__list-price">
+              <span class="filter__list-subtitle">Цена, руб</span>
+              <div class="filter__list-inputs">
+                <input id="input-0" class="filter__list-input" type="number">
+                <input id="input-1" class="filter__list-input" type="number">
               </div>
               <div id="range-slider" class="price-filter__range" >
             </li>
-            <li class="filter__gender gender">
-              <span class="gender__title filter__title">Пол</span>
-              <div class="gender__inner">
-                <label class="gender__label checkbox-custom">
-                <input class="gender__checkbox checkbox-custom__input" type="checkbox">
+            <li class="filter__list-gender filter-gender">
+              <span class="filter__list-subtitle">Пол</span>              
+              <label class="filter-gender__label-checkbox filter-gender__label-checkbox-1 checkbox-custom">
+                <input class="filter-gender__checkbox checkbox-custom__input" type="checkbox">
                 <span></span>    
                 мужской            
               </label>
-              <label class="gender__label checkbox-custom">
-                <input class="gender__checkbox checkbox-custom__input" type="checkbox">
+              <label class="filter-gender__label-checkbox filter-gender__label-checkbox-2 checkbox-custom">
+                <input class="filter-gender__checkbox checkbox-custom__input" type="checkbox">
                 <span></span>
                 женский                
               </label>
-              </div>
+              
             </li>
-            <li class="filter__discounts">  
-              <span class="filter__title">Скидки</span>   
-              <ul>
-                <li>
+            <li class="filter__discounts filter-discounts">  
+              <span class="filter__list-subtitle">Скидки</span>   
+              <ul class="filter-discounts__list">
+                <li class="filter-discounts__item">
                   <label class="radio-custom">
                     <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 10% и выше
                   </label>
                 </li>
-                <li>
+                <li class="filter-discounts__item">
                   <label class="radio-custom">
                     <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 30% и выше
                   </label>
                 </li>
-                <li>
+                <li class="filter-discounts__item">
                   <label class="radio-custom">
                     <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
                     от 50% и выше
                   </label>
                 </li>
-                <li>
+                <li class="filter-discounts__item">
                   <label class="radio-custom">
                     <input class="radio-custom__input" type="radio" name="q1">
                     <span></span> 
@@ -127,268 +125,270 @@
                   </label>
                 </li>
               </ul>       
-            </li>
-            <li class="filter__size size-filter">
-              <span class="filter__title size-filter__title">Размер</span>
-              <ul class="size-filter__list">
-                <li class="size-filter__item"><button>XS</button></li>
-                <li class="size-filter__item"><button>S</button></li>
-                <li class="size-filter__item"><button>M</button></li>
-                <li class="size-filter__item"><button>L</button></li>
-                <li class="size-filter__item"><button>XL</button></li>
-                <li class="size-filter__item"><button>XXL</button></li>
-              </ul>     
-            </li>
+            </li>            
           </ul>
           <button class="filter__btn filter__btn-on">Применить</button>
           <button class="filter__btn filter__btn-off">сбросить</button>
         </div>
-        <div class="catalog__products products --hide-content">               
-            <article class="products__card card">
+        <div class="catalog__products --hide-content">               
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/1.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка Calvin Klein</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">600 ₽</span>
-                    <span class="price-before">1000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>                  
-                  </button>                  
-                </div>                
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand">Calvin Klein</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">6000&nbsp; ₽</span>
+                <span class="card__price-before">10&nbsp;000&nbsp; ₽</span>
+                <span class="card__sale">-35%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/2.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка Giorgio Armani</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">1000 ₽</span>
-                    <span class="price-before">1500 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg> 
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand">Giorgio Armani</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">5200&nbsp; ₽</span>
+                <span class="card__price-before">8000&nbsp; ₽</span>
+                <span class="card__sale">-20%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/3.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка поло Puma</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">500 ₽</span>
-                    <span class="price-before">700 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand">Puma</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">4000&nbsp; ₽</span>
+                <span class="card__price-before">7000&nbsp; ₽</span>
+                <span class="card__sale">-40%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/4.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка Reebok серая</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">800 ₽</span>
-                    <span class="price-before">1000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >Reebok</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">10&nbsp;000&nbsp; ₽</span>
+                <span class="card__price-before">15&nbsp;000&nbsp; ₽</span>
+                <span class="card__sale">-30%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/5.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка STEFANO RICCI</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">1200 ₽</span>
-                    <span class="price-before">2000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >STEFANO RICCI</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">15&nbsp;000&nbsp; ₽</span>
+                <span class="card__price-before">17&nbsp;000&nbsp; ₽</span>
+                <span class="card__sale">-15%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/6.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка EMPORIO ARMANI</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">2500 ₽</span>
-                    <span class="price-before">4000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >EMPORIO ARMANI</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">8000&nbsp; ₽</span>
+                <span class="card__price-before">9500&nbsp; ₽</span>
+                <span class="card__sale">-10%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/7.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка ZILLI</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">1000 ₽</span>
-                    <span class="price-before">2200 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >ZILLI</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">5000&nbsp; ₽</span>
+                <span class="card__price-before">8000&nbsp; ₽</span>
+                <span class="card__sale">-30%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/8.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка CORNELIANI</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">1500 ₽</span>
-                    <span class="price-before">3300 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >CORNELIANI</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">30&nbsp;000&nbsp; ₽</span>
+                <span class="card__price-before">45&nbsp;000&nbsp; ₽</span>
+                <span class="card__sale">-10%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
                 <img src="./img/products/9.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Майка ZILLI</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">10 000 ₽</span>
-                    <span class="price-before">14 500 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
-            </article>
-            <article class="products__card card">
-              <a class="card__img" href="#">
-                <img src="./img/products/1.jpg" alt="футболка ">
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >VERSACE</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">7000&nbsp; ₽</span>
+                <span class="card__price-before">8000&nbsp; ₽</span>
+                <span class="card__sale">-12%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка EMPORIO ARMANI</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">3700 ₽</span>
-                    <span class="price-before">10 000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
-                <img src="./img/products/2.jpg" alt="футболка ">
+                <img src="./img/products/10.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка VERSACE</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">30 000 ₽</span>
-                    <span class="price-before">50 000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >Boss</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">4000&nbsp; ₽</span>
+                <span class="card__price-before">6000&nbsp; ₽</span>
+                <span class="card__sale">-34%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-            <article class="products__card card">
+            <article class="catalog__products-card card">
               <a class="card__img" href="#">
-                <img src="./img/products/3.jpg" alt="футболка ">
+                <img src="./img/products/11.jpg" alt="футболка ">
               </a>
-              <div class="card__inner">
-                <a class="card__name" href="#">Футболка Puma</a>
-                <div class="card__underline">
-                  <div class="card__price">
-                    <span class="price-now">600 ₽</span>
-                    <span class="price-before">1000 ₽</span>
-                  </div>
-                  <button class="card__basket">
-                    <svg class="basket__img">
-                      <use href="img/svg/sprite.svg#basket-orange"></use>
-                    </svg>
-                  </button>
-                </div>                  
-              </div>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand">Moschino</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">16&nbsp;000&nbsp; ₽</span>
+                <span class="card__price-before">25&nbsp;000&nbsp; ₽</span>
+                <span class="card__sale">-10%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
             </article>
-          <button class="products__btn btn --btn-add">Показать еще</button>
+            <article class="catalog__products-card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/12.jpg" alt="футболка ">
+              </a>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >Lacoste</span>
+                <span class="card__name-type">Майка</span>              
+                <span class="card__price-now">10&nbsp;000&nbsp; ₽</span>
+                <span class="card__price-before">15&nbsp;000&nbsp; ₽</span>
+                <span class="card__sale">-35%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
+            </article>
+            <article class="catalog__products-card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/13.jpg" alt="футболка ">
+              </a>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand">Love Moschino</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">4000&nbsp; ₽</span>
+                <span class="card__price-before">5500&nbsp; ₽</span>
+                <span class="card__sale">-20%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
+            </article>
+            <article class="catalog__products-card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/14.jpg" alt="футболка ">
+              </a>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >Ice Play</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">2500&nbsp; ₽</span>
+                <span class="card__price-before">6000&nbsp; ₽</span>
+                <span class="card__sale">-55%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
+            </article>
+            <article class="catalog__products-card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/15.jpg" alt="футболка ">
+              </a>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand" >Love Moschino</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">5000&nbsp; ₽</span>
+                <span class="card__price-before">7000&nbsp; ₽</span>
+                <span class="card__sale">-35%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
+            </article>
+            <article class="catalog__products-card card">
+              <a class="card__img" href="#">
+                <img src="./img/products/16.jpg" alt="футболка ">
+              </a>
+              <a href="#" class="card__inner">
+                <span class="card__name-brand">Love Moschino</span>
+                <span class="card__name-type">Футболка</span>              
+                <span class="card__price-now">8000&nbsp;₽</span>
+                <span class="card__price-before">10&nbsp;000&nbsp;₽</span>
+                <span class="card__sale">-20%</span>
+              <div class="card__underline">
+                <button class="card__underline-btn">В корзину</button>              
+              </div>                                                   
+              </a>
+            </article>
+            
+          <button class="catalog__products-btn --btn-add">Показать еще</button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="delivery">
+  <section class="delivery" id="delivery">
     <div class="container">
       <div class="delivery__inner">
-        <div class="delivery__text text-delivery">
-          <h2 class="text-delivery__title title">Доставка и оплата</h2>
-          <ul class="text-delivery__list">
-            <li class="text-delivery__advantages">Бесплатная доставка от 3000 ₽</li>
-            <li class="text-delivery__advantages">Возврат товара в течении 7 дней</li>
-            <li class="text-delivery__advantages">В будни и выходные дни</li>
+        <div class="delivery__content">
+          <h2 class="delivery__content-title title">Доставка и оплата</h2>
+          <ul class="delivery__content-list">
+            <li class="delivery__content-advantages">Бесплатная доставка от 3000&nbsp; ₽</li>
+            <li class="delivery__content-advantages">Возврат товара в течении 7 дней</li>
+            <li class="delivery__content-advantages">В будни и выходные дни</li>
           </ul>
-          <button class="text-delivery__btn">Заказать</button>
+          <button class="delivery__content-btn">Заказать</button>
         </div>
         <div class="delivery__photo">
           <img src="./img/happy.webp" alt="одобряющая девушка">
@@ -421,37 +421,37 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
   <div class="container">
     <h2 class="team__title title">О нас</h2>
     <ul class="team__list">
-      <li class="team__item people">          
-        <div class="people__img">
+      <li class="team__item">          
+        <div class="team__item-img">
             <img src="./img/team/1.jpg" alt="человек">
         </div>
-        <span class="people__name">Арзамаскин Кирилл</span>
-          <span class="people__position">Менеджер</span>
+        <span class="team__item-name">Арзамаскин Кирилл</span>
+          <span class="team__item-position">Менеджер</span>
       </li>
-      <li class="team__item people">
-        <div class="people__img">
+      <li class="team__item">
+        <div class="team__item-img">
             <img src="./img/team/2.jpg" alt="человек">
         </div>
-        <span class="people__name">Арзамаскин Кирилл</span>
-        <span class="people__position">Копирайтер</span>          
+        <span class="team__item-name">Арзамаскин Кирилл</span>
+        <span class="team__item-position">Копирайтер</span>          
       </li>
-      <li class="team__item people">
-        <div class="people__img">
+      <li class="team__item">
+        <div class="team__item-img">
             <img src="./img/team/3.jpg" alt="человек">
         </div>
-        <span class="people__name">Арзамаскин Кирилл</span>
-        <span class="people__position">Верстальщик</span>          
+        <span class="team__item-name">Арзамаскин Кирилл</span>
+        <span class="team__item-position">Верстальщик</span>          
       </li>
     </ul>
   </div>
   </section>
 
 
-  <section id="сontacts" class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <div class="contacts__wrap">
         <div class="contacts__info info">
@@ -471,12 +471,12 @@
                 </span>
               </span>
             </h3>
-            <a class="info__phone title" href="tel:+78005434343">+7 800 543 43 43</a>
+            <a class="info__phone" href="tel:+78005434343">+7 800 543 43 43</a>
             <span class="info__address">г. Москва, ул. Моховая, 14 корпус 2</span>
           </div>
           <div class="info__item">
             <h3 class="info__subtitle">Главный офис</h3>
-            <a class="info__phone title" href="tel:+78005434343">+7 800 543 43 43</a>
+            <a class="info__phone" href="tel:+78008438383">+7 800 843 83 83</a>
             <span class="info__address">г. Москва, ул. Моховая, 14 корпус 2</span>
           </div>
           <div class="info__social info-social">
@@ -505,7 +505,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17742.523186596947!2d43.4051244!3d56.2294257!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1620151334454!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3472438182!2d36.825122102633365!3d55.58152442326181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1620393428989!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>  
       </div>
     </div>
@@ -515,22 +515,22 @@
 <footer class="footer">
   <div class="container">  
 		<div class="footer__wrap">
-			<a class="footer__logo logo" href="#">Shopkir</a>
+			<a class="logo" href="index.html">Shopkir</a>
 			<ul class="footer__list">
-				<li>
-					<a href="#" class="footer__link">Главная</a>                                  
+				<li class="footer__list-item">
+					<a href="index.html" class="footer__list-link --nav__link">Главная</a>                                  
 				</li>
-				<li>
-					<a href="#" class="footer__link">Каталог</a>
+				<li class="footer__list-item">
+					<a href="#catalog" class="footer__list-link --nav__link">Каталог</a>
 				</li>
-				<li>
-					<a href="#" class="footer__link">О нас</a>
+				<li class="footer__list-item">
+					<a href="#team" class="footer__list-link --nav__link">О нас</a>
 				</li>
-				<li>
-					<a href="#" class="footer__link">Доставка и оплата</a>
+				<li class="footer__list-item">
+					<a href="#delivery" class="footer__list-link --nav__link">Доставка и оплата</a>
 				</li>
-				<li>
-					<a href="#" class="footer__link">Контакты</a>
+				<li class="footer__list-item">
+					<a href="#contacts" class="footer__list-link --nav__link">Контакты</a>
 				</li>										
 			</ul>  
 		</div> 		         
