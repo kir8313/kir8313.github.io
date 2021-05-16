@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Пружинный маятник</title>
+</head>
+<body>
+<main>
+  <section class="pendulum">
+    <div class="container">
+      <h1 class="pendulum__title">Пружинный маятник</h1>
+      <!-- главная обертка -->
+      <div class="pendulum__inner">
+        <!-- демонстрация. Левая часть. Маятник, секундомер, кнопки -->
+        <div class="pendulum-demo">                        
+          <div class="pendulum-demo__svg">            
+            <img class="pendulum-demo__svg-top" src="./img/top.svg" alt="опора">
+            <img class="pendulum-demo__svg-spring" src="./img/spring.svg" alt="пружина">
+            <img class="pendulum-demo__svg-circle" src="./img/circle.svg" alt="груз шар">
+            <span class="pendulum-demo__svg-start-position">x&#8320;</span>
+          </div>
+          <form name=MyForm class="pendulum-demo__timer">   
+            <input name=stopwatch size=10 value="00:00:00.00" tabindex="-1">  
+          </form>
+          <button class="pendulum-demo__btn pendulum-demo__btn-start" type="button">Старт</button>            
+          <button class="pendulum-demo__btn pendulum-demo__btn-stop" form="form-formula" type="reset" hidden>Стоп</button>            
+        </div>
+        <!-- Правая часть. Параметры и формула -->
+        <div class="pendulum__right">
+          <div class="pendulum-settings">
+            <span class="pendulum-settings__title">Параметры</span>
+            <!-- параметр 1. Масса -->
+            <div class="pendulum-settings__item">
+              <span class="pendulum-settings__subtitle">
+                <strong>m</strong> - масса груза (значения от&nbsp;0.5 до&nbsp;1кг)
+              </span>
+              <!-- обертка для изменяемого поля и кнопок -->
+              <div class="pendulum-settings__inner">
+                <button class="pendulum-settings__btn pendulum-settings__btn_less" id="btn-weight-less" type="button"></button>
+                <input class="pendulum-settings__input" id="input-weight" type="number" value="0.5" tabindex="-1">
+                <button class="pendulum-settings__btn pendulum-settings__btn_more" id="btn-weight-more" type="button"></button>
+              </div>
+            </div>
+            <!-- параметр 2. Жёсткость -->
+            <div class="pendulum-settings__item">
+              <span class="pendulum-settings__subtitle">
+                <strong>k</strong> - жёсткость пружины (значения от&nbsp;5 до&nbsp;9 h/m)</span>
+              <div class="pendulum-settings__inner">
+                <button class="pendulum-settings__btn pendulum-settings__btn_less" id="btn-stiffness-less" type="button"></button>
+                <input class="pendulum-settings__input" id="input-stiffness" type="number" value="5" tabindex="-1">
+                <button class="pendulum-settings__btn pendulum-settings__btn_more" id="btn-stiffness-more" type="button"></button>
+              </div>
+            </div>
+            <!-- Параметр 3. Первоначальное отклонение -->
+            <div class="pendulum-settings__item">
+              <span class="pendulum-settings__subtitle">
+                <strong>x&#8320;</strong> - первоначальное отклонение 
+                  от&nbsp;равновесия вниз (значения от&nbsp;0 до&nbsp;20см)
+              </span>
+              <div class="pendulum-settings__inner">
+                <button class="pendulum-settings__btn pendulum-settings__btn_less" id="btn-way-less" type="button"></button>
+                <input class="pendulum-settings__input" id="input-way" type="number" value="10" tabindex="-1">
+                <button class="pendulum-settings__btn pendulum-settings__btn_more" id="btn-way-more" type="button"></button>
+              </div>
+            </div>   
+          </div> 
+          <!-- Формула. Значение изменяемых полей в виде форм, для сброса по кнопке -->
+          <div class="pendulum-result">
+            <span class="pendulum-result__title"> Формула</span>
+            <form class="pendulum-result__formula" id="form-formula">
+              <span class="pendulum-result__formula-frequency">v = </span>
+              <input class="pendulum-result__formula-x0" id="x0" type="text" value="x&#8320;" tabindex="-1">
+              <span class="pendulum-result__formula-radical">&#8730;</span>
+              <div class="pendulum-result__formula-fraction">
+                <input id="stiffness" type="text" value="k" tabindex="-1">
+                <input id="weight" type="text" value="m" tabindex="-1">
+              </div>
+              = <input class="pendulum-result__formula-answer" id="answer" type="number" value="0" tabindex="-1">
+            </form>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+</main>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+@import "_vars";
+@import "_normalize";
+
+
+
+.container
+  max-width: 1200px
+  padding: 0 10px
+  margin: 0 auto
+
+.pendulum
+  background: linear-gradient(180deg, #2F6ED3 3.13%, #5095E4 28.65%, #5095E4 70.31%, #2F6ED3 96.88%);
+  padding: 60px 0
+  min-height: 100vh;
+  &__title
+    margin: 0 0 40px 0
+    font-size: var(--title)
+    font-weight: 600
+  &__inner
+    display: flex
+    position: relative
+    padding: 30px 20px
+    border: 1px solid var(--white)
+    border-radius: 5px 
+    &::after
+      content: ""
+      position: absolute
+      left: 430px
+      top: 0
+      width: 1px
+      height: 100%
+      background-color: var(--white)
+  &-demo
+    min-height: 400px
+    flex: 0 0 400px
+    position: relative
+    margin: 0 50px 0 0
+    &__svg
+      display: flex
+      max-width: 350px
+      flex-direction: column
+      position: relative
+      &-top
+        position: relative
+        top: 2px
+      &-spring
+        --cubic: 0.4
+        max-width: 28px
+        align-self: center
+        transform-origin: 0 0%
+        transition: all 0.5s ease 0s
+        will-change: transform;      
+      &-circle        
+        --y: 129px        
+        width: var(--circle-width)
+        align-self: center
+        will-change: transform;
+        transform: translateY(calc(var(--y) + 20px))    
+        position: absolute
+        transition: width 0.3s ease 0s
+        top: 
+      &-start-position   
+        --x0: 10px;     
+        --circle-number: var(--circle-width)
+        position: absolute
+        top: calc(140px + var(--x0) + var(--circle-number))
+        left: 240px
+        font-size: var(--small-text)
+        transition: all 0.3s ease 0s
+        &::before
+          content: ""
+          position: absolute
+          top: calc(50% + 1px)
+          left: -30px
+          width: 20px
+          height: 1px
+          background: var(--white)
+      &.--anim
+        .pendulum-demo__svg-spring
+          animation: spring 3s 0s cubic-bezier(var(--cubic),var(--cubic),var(--cubic),var(--cubic)) infinite 
+    &__btn
+      position: absolute
+      bottom: 0
+      right: 10px
+      padding: 15px 40px
+      border-radius: 5px      
+      transition: all 0.3s ease 0s
+      &-start
+        background: #5E30B2
+        &:hover
+          background: lighten(#5E30B2, 8%)
+      &-stop
+        background: #e92304
+        right: 12px
+        &:hover
+          background: darken(#e92304, 8%)
+      &:active
+        transform: scale(0.9);
+    &__timer
+      position: absolute
+      bottom: 0
+      left: 0
+      & input
+        background: transparent
+        border: 1px solid var(--white)
+        color: var(--white)
+        font-size: var(--text)
+        pointer-events: none
+        
+  &-settings
+    margin: 0 0 40px 0
+    &__title
+      display: block
+      font-size: var(--h2)
+      margin: 0 0 20px 0
+    &__item
+      display: flex
+      justify-content: space-between
+      margin: 0 0 20px 0
+    &__subtitle
+      font-size: var(--small-text)
+      max-width: 350px
+      line-height: 125%
+      & strong
+        font-style: italic
+        font-weight: 400
+    &__inner
+      margin: 0 0 0 10px
+      display: flex
+      align-items: center
+      align-self: flex-start
+    &__input
+      max-width: 50px
+      margin-right: 10px    
+      background: transparent
+      border: 1px solid var(--white)  
+      color: var(--white)
+      text-align: center
+      pointer-events: none
+    &__btn
+      width: 25px
+      height: 25px
+      background: var(--white)
+      position: relative
+      padding: 0
+      border-radius: 50%      
+      &::before
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background: #383c44;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+      &:hover
+        background: #e4e4e4
+      &:active
+        transform: scale(0.95);
+      &_less
+        margin-right: 10px
+      &_more
+        &::after
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 1px;
+          background: #383c44;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%) rotate(90deg);
+  &-result
+    &__title
+      display: block
+      margin: 0 0 20px 0
+      font-size: var(--h2) 
+    &__formula
+      display: flex
+      font-size: var(--text)
+      &-frequency
+        margin-right: 10px
+        font-style: italic
+      &-x0
+        margin-right: 5px
+        font-size: var(--text)
+        align-self: flex-start
+      &-x0,
+      &-fraction input
+        max-width: 30px 
+        background: transparent
+        border-radius: 0
+        padding: 0
+        color: var(--white)
+        text-align: center
+        pointer-events: none
+      &-radical        
+        font-family: MathJax_Size3
+        font-size: 30px
+      &-fraction
+        display: flex
+        text-align: center
+        flex-direction: column
+        margin-right: 5px
+        & input
+          border-top: 1px solid var(--white)
+          font-size: 14px
+      &-answer
+        margin-left: 5px
+        max-width: 50px
+        text-align: center
+        align-self: center
+        border: 1px solid var(--white)
+        font-size: 16px
+        background: transparent
+        color: var(--white)
+        pointer-events: none
+.change
+  animation: change-bg 1s linear 1 0s 
+@keyframes spring
+  0%
+    transform: scale(1);
+  50%
+    transform: scale(1, var(--scale-more));
+  70%
+    transform: scale(1, var(--scale-less));
+  100%
+    transform: scale(1);
+
+@keyframes change-bg        
+  0%
+    background: #5E30B2
+  100%
+    background: transparent  
