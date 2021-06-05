@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>T-Task</title>	
+</head>
+<body>	
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="container">
+					<div class="header-top__inner">
+						<a class="header-top__logo" href="#">
+							<img src="img/svg/sprite.svg#logo" alt="логотип">
+						</a>
+						<button class="header-top__burger">
+							<span></span>
+						</button>
+						<nav class="header-top__menu menu">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#">Main</a></li>
+								<li class="menu__item"><a href="#">Gallery</a></li>
+								<li class="menu__item"><a href="#">News</a></li>
+								<li class="menu__item"><a href="#">Profile</a></li>
+							</ul>							
+						</nav>
+						<div class="header-top__contacts">
+							<a href="tel:+544349000000">+544 3490 00000</a>
+							<span>Звони скорее!</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1 class="header__title">Найдено 349 котов</h1>
+			<img class="header__bg-img" src="./img/header.jpg" srcset="./img/header@2x.jpg 2x, ./img/header@3x.jpg 3x">
+		</div>
+	</header>
+	<main>
+		<section class="products">
+			<div class="container">
+				<div class="products-filter">
+					<span class="products-filter__subtitle">Сортировать по:</span>					
+					<details class="products-filter-details" id="filter-price">
+						<summary class="products-filter-details__name">Цене</summary>
+						<ul class="products-filter-details__list">
+							<li class="products-filter-details__item"><button type="button">По возрастанию</button></li>
+							<li class="products-filter-details__item"><button type="button">По убыванию</button></li>
+						</ul>
+					</details>
+					<details class="products-filter-details" id="filter-age">
+						<summary class="products-filter-details__name">Возрасту</summary>
+						<ul class="products-filter-details__list">
+							<li class="products-filter-details__item"><button type="button">По возрастанию</button></li>
+							<li class="products-filter-details__item"><button type="button">По убыванию</button></li>
+						</ul>
+					</details>	
+				</div>
+				<div class="products__inner"></div>				
+				<button class="products__btn-more">Показать еще 20</button>
+				
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="offer__inner">
+					<div class="offer-text">
+						<h2 class="offer-text__title">Успей купить!</h2>
+						<span class="offer-text__subtitle">Подпишись и успей словить все акции</span>
+					</div>
+					<div class="offer__right">
+						<form action="#" class="offer__form form">
+							<div class="form__inner">
+									<input class="form__email" type="email" name="email" placeholder="Email">
+								<label class="form__label">
+									<input type="checkbox" checked name="checkbox">
+									<span></span>
+									Подписаться на новости
+								</label>
+							</div>							
+							<button class="form__btn" type="submit">Подписаться</button>							
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<a class="arrow-up --link" href="#header"></a>
+<script src="./js/main.min.js"></script>
+</body>
+
+</html>
