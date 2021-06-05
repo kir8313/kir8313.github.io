@@ -9,5 +9,5 @@
 Кнопка больше товаров.
 </p>
 
-<a href="http://kir8313.github.io/T-Task_shop/" target="_blank">Демонстрация</a>
+<a href="https://kir8313.github.io/T-Task_shop/index.html" target="_blank">Демонстрация</a>
 
