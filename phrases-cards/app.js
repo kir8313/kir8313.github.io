@@ -1,5 +1,6 @@
 'use strict'
 window.addEventListener('DOMContentLoaded', () => {
+  let arrBackgrounds = ['#5162c3', '#c2245e', '#b201fe', '#05c3db', '#e85b26', '#feac00']
   showCards();
   showManipulations();
   addCard();
@@ -11,7 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
         const phrasesColumnOne = document.querySelector('.phrases__inner > div:first-child');
         const phrasesColumnTwo = document.querySelector('.phrases__inner > div:nth-child(2)');
         const phrasesColumnThree = document.querySelector('.phrases__inner > div:nth-child(3)');
-        let arrBackgrounds = ['#5162c3', '#c2245e', '#b201fe', '#05c3db', '#e85b26', '#feac00']
         let arrayFiveElem = [];
         let arrayForTwoColumn = [];
         let arrayForThreeColumn = [];
@@ -46,9 +46,9 @@ window.addEventListener('DOMContentLoaded', () => {
         pushInHtml(phrasesColumnTwo, arrayForTwoColumn)
         pushInHtml(phrasesColumnThree, arrayForThreeColumn)
 
-        function pushInHtml(column, array, colors = arrBackgrounds) {
+        function pushInHtml(column, array) {
           column.innerHTML = array.map(item => `
-          <button class="phrases-item" style="background: ${colors[getRandomNumber(0, colors.length - 1)]};">
+          <button class="phrases-item" style="background: ${arrBackgrounds[getRandomNumber(0, arrBackgrounds.length - 1)]};">
             <h3 class="phrases-item__title">${item.theme}</h3>
             <p class="phrases-item__texts">
               <span class="phrases-item__text phrases-item__text_eu">${item.sourceText}</span>
@@ -137,7 +137,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       function createTask(theme, sourceText, translation) {
         let task = `
-        <button class="phrases-item">
+        <button class="phrases-item" style="background: ${arrBackgrounds[getRandomNumber(0, arrBackgrounds.length - 1)]};">
           <h3 class="phrases-item__title">${theme.value}</h3>
           <p class="phrases-item__texts">
             <span class="phrases-item__text phrases-item__text_eu">${sourceText.value}</span>
