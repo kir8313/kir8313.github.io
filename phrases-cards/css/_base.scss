@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: 'Open-sans', Helvetica, sans-serif;
+}
+
+body.--lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  padding-right: 20px;
+}
+
+main {
+  flex: 1 0 auto;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  border: none;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 10px 1px #13b3fd;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font: inherit 16px inherit;
+  color: inherit;
+}
+
+button {
+  border: none;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.4s ease 0s;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 10px 1px #13b3fd;
+  }
+}
+
+li {
+  list-style: none;
+}
