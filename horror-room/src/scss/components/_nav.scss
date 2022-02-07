@@ -1,0 +1,62 @@
+@import "../mixins/my";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary);
+  height: 60px;
+  box-shadow: 0 2px 4px var(--red);
+  // .header__inner
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // .header__left
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  // .header__logo
+  &__logo {
+    margin-right: 90px;
+    color: var(--red);
+    font: var(--h2);
+  }
+
+  // .header__burger
+  // &__burger {
+  // }
+
+  // .header__contacts
+  &__phone {
+    font: var(--text);
+    transition: color 0.4s ease 0s;
+  }
+}
+
+.menu {
+  // .menu__list
+  &__list {
+    display: flex;
+  }
+
+  // .menu__link
+  &__link {
+    font: var(--text-medium);
+    transition: transform 0.4s ease 0s, color 0.4s ease 0s;
+    @include hover-line(var(--red));
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu__link:hover,
+  .header__phone:hover {
+    color: var(--red);
+  }
+}

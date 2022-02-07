@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/nav.html')
+
+  <main>
+    @include('partials/first.html')
+    @include('partials/quests.html')
+    @include('partials/offer.html')
+    @include('partials/advantages.html')
+    @include('partials/feedback.html')
+    @include('partials/faq.html')
+    @include('partials/offer-2.html')
+    @include('partials/contacts.html')
+
+    <div class="graph-modal">
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="description">
+        <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+          <div class="graph-modal__title">Описание</div>
+          <ol>
+            <li>Исходники <a class="graph-modal__link" href="https://github.com/kir8313/kir8313.github.io/tree/master/horror-room" target="_blank">тут</a></li>
+            <li>Адаптив только ПК для 1920х1080</li>
+            <li>
+              Сделал анимации: <br />
+              <ol>
+                <li>Главный экран - в картинке</li>
+                <li>Раздел квесты - по наведению на картинку</li>
+                <li>Раздел преимущества - пузыри </li>
+                <li>Раздел контакты - топор</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @include('partials/footer.html')
+
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=39cf745a-e87f-4b50-afa2-b1fdb1d24fa0&lang=ru_RU"></script>
+</body>
+
+</html>

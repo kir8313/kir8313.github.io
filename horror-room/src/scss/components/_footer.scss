@@ -1,0 +1,11 @@
+.footer {
+  position: relative;
+  background: var(--primary);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px var(--red);
+
+  &__text {
+    font: var(--text-medium);
+  }
+}

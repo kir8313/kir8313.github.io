@@ -1,0 +1,176 @@
+@import "../mixins/my";
+@import "../_vars";
+
+.contacts {
+  position: relative;
+  background: var(--secondary);
+  padding: var(--padding-big);
+  overflow: hidden;
+
+  &.--animated {
+    .contacts__ax {
+      transform: rotate(0deg);
+    }
+
+    .contacts-text__messenger {
+      &_vk {
+        animation: fade 1s ease 3.5s 1 forwards;
+      }
+
+      &_insta {
+        animation: fade 1s ease 4.5s 1 forwards;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-text {
+    position: relative;
+    z-index: 1;
+    margin-right: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      margin: var(--margin);
+      font: var(--h2);
+
+      strong {
+        color: var(--red);
+        font-weight: 700;
+      }
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      font: var(--text-medium);
+
+      & > a,
+      & > span {
+        display: flex;
+        align-items: center;
+      }
+
+      & > a:before,
+      & > span:before {
+        content: "";
+        display: inline-block;
+        margin-right: 20px;
+        fill: transparent;
+        stroke: var(--white);
+      }
+
+      &_phone {
+        padding-left: 40px;
+
+        &:before {
+          background: url("../img/svg/phone.svg") no-repeat;
+          background-size: contain;
+          left: -4px;
+          width: 30px;
+          height: 40px;
+        }
+
+        &:hover:before {
+          animation: rotate 2.5s ease 1;
+        }
+      }
+
+      &_email {
+        padding-left: 40px;
+
+        &:before {
+          background: url("../img/svg/email.svg") no-repeat;
+          background-size: contain;
+          top: 2px;
+          width: 35px;
+          height: 25px;
+        }
+
+        &:hover:before {
+          animation: scale 2.5s ease 1;
+        }
+      }
+
+      &_time {
+        padding-left: 40px;
+
+        &:before {
+          background: url("../img/svg/time.svg") no-repeat;
+          background-size: contain;
+          left: -5px;
+          width: 35px;
+          height: 30px;
+        }
+      }
+    }
+
+    &__messenger {
+      position: absolute;
+      bottom: 30px;
+      transform: scale(0);
+      transition: transform 1s ease 0s;
+
+      &:hover {
+        transform: scale(1.1) !important;
+      }
+
+      svg {
+        width: 45px;
+        height: 45px;
+      }
+
+      &_vk {
+        left: 5%;
+      }
+
+      &_insta {
+        left: 28%;
+      }
+    }
+  }
+
+  &__ax {
+    position: absolute;
+    top: 16vw;
+    left: 18vw;
+    // transform-origin: top center;
+    // transform: rotate(80deg);
+    transform-origin: bottom;
+    transform: rotate(80deg);
+    transition: transform 1.5s ease-in-out 1s;
+  }
+
+  .map {
+    position: relative;
+    width: 30vw;
+    height: 25vw;
+    z-index: 1;
+    box-shadow: 0px 0px 30px 8px rgba(173, 6, 6, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1) brightness(45%);
+}
+
+[class*="map-bg"] {
+  width: 30vw !important;
+  height: 25vw !important;
+}

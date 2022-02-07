@@ -1,0 +1,37 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/advantages";
+@import "./components/contacts";
+@import "./components/faq";
+@import "./components/feedback";
+@import "./components/first";
+@import "./components/footer";
+@import "./components/nav";
+@import "./components/offer";
+@import "./components/quest";
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.graph-modal__content {
+  color: var(--primary);
+}
+
+.graph-modal__close:focus-visible {
+  box-shadow: none;
+}
+
+.graph-modal__title {
+  font: var(--h2);
+}
+
+.graph-modal__link {
+  font-weight: bold;
+  color: var(--red);
+}

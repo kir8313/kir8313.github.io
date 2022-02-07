@@ -1,0 +1,26 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --h1: italic 700 48px/120% var(--font-family);
+  --h2: italic 700 36px/120% var(--font-family);
+  --h3: italic 700 30px/120% var(--font-family);
+  --text: 400 22px var(--font-family);
+  --text-medium: 400 18px/140% var(--font-family);
+  --margin: 0px 0px 40px 0px;
+  --margin-small: 0px 0px 20px 0px;
+  --padding: 140px 0;
+  --padding-big: 160px 0;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --primary: #0b0d15;
+  --secondary: #11141f;
+  --red: #ad0606;
+  --white: #f2f2f2;
+}

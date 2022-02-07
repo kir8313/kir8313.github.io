@@ -1,0 +1,31 @@
+@import "../mixins/my";
+
+.offer {
+  background: var(--primary);
+  padding: 50px 0;
+
+  // .offer__inner
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .offer__title
+  &__title {
+    display: inline-block;
+    margin: 0 40px 0 0;
+    font: var(--h2);
+    strong {
+      color: var(--red);
+      font-weight: 700;
+    }
+  }
+
+  // .offer__btn
+  &__btn {
+    display: inline-block;
+    @include btn;
+    padding: 16px 32px;
+  }
+}
