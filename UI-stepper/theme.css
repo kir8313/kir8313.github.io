@@ -101,6 +101,7 @@ h3 {
   border: #ddd!important;
   color: #aaa!important;
   cursor: not-allowed;
+  opacity: 1 !important;
 }
 
 .btn:active {
