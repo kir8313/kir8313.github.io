@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI плагин - Stepper</title>
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+
+  <div class="container" id="app" v-cloak>
+    <div class="card">
+      <h1>План по изучению Vue.js</h1>
+      <div class="steps">
+        <div class="steps-content">
+          {{ this.steps[checkActiveStep].text }}
+        </div>
+        <ul class="steps-list">
+          <li class="steps-item"
+              :class="checkCondition(index)"
+              key="item.title"
+              @click="setActive(index)"
+              v-for="(item, index) in steps">
+            <span>{{ index + 1 }}</span>
+            <i>{{ item.title }}</i>
+          </li>
+        </ul>
+        <div v-if="noComplited">
+          <button class="btn" :disabled="checkActiveStep === 0" @click="prev">Назад</button>
+          <button class="btn primary" @click="nextOfFinish(); checkLastStep">
+            {{ checkLastStep }}
+          </button>
+        </div>
+        <div v-else>
+          <button class="btn" @click="reset">
+            Начать Заново
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="vue.js"></script>
+  </body>
+</html>
