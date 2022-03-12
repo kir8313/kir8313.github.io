@@ -38,11 +38,6 @@ const App = {
     setActive(index) {
       // когда нажимаем на определенный шаг
       this.activeIndex = index;
-      if (this.activeIndex === this.steps.length - 1) {
-        this.noComplited = false;
-      } else if (this.noComplited === false) {
-        this.noComplited = true;
-      }
     },
 
     checkCondition(index) {
