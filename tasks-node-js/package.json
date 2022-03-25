@@ -1,0 +1,26 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "this is first app to node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [
+    "node.js",
+    "js"
+  ],
+  "author": "kirill arzamaskin <https://github.com/kir8313>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/yargs": "^17.0.10",
+    "chalk": "^4.1.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "yargs": "^17.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
